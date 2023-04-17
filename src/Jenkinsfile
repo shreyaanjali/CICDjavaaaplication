@@ -10,7 +10,7 @@ pipleline {
 
                 scripts{
 
-                    git branch: 'main', url: 'https://github.com/shreyaanjali/javaappCICDFull.git'
+                    git branch: 'main', url: 'https://github.com/shreyaanjali/CICDjavaaaplication.git'
 
                 }
             }
