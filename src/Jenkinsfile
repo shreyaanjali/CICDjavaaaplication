@@ -1,4 +1,4 @@
-@Library ('my-shared-library') _
+@Library('my-shared-library') _
 
 pipeline {
     agent any
@@ -9,15 +9,12 @@ pipeline {
             
             
             steps{
-
-                script{
-
-                    gitCheckout(
-                        branch: "main"
-                        url: "https://github.com/shreyaanjali/CICDjavaaaplication.git"
+            gitCheckout(
+                branch: "main"
+                url: "https://github.com/shreyaanjali/CICDjavaaaplication.git"
                     )   
                 }
             }
         }
     }
-}
+
