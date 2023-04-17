@@ -1,0 +1,19 @@
+pipleline {
+    agent any
+
+    stages{
+        
+        stage('Git Checkout') {
+            
+            
+            steps{
+
+                scripts{
+
+                    git branch: 'main', url: 'https://github.com/shreyaanjali/javaappCICDFull.git'
+
+                }
+            }
+        }
+    }
+}
